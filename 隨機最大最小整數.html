@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 製作隨機數字 function，
+    // 提供最小整數和最大整數，回傳一個區間內的隨機整數
+    // 假設為 150~200 區間的隨機整數 => (0~50)的隨機整數，之後再加回150
+
+    const rand = (min, max) => {
+      return Math.round(Math.random() * (max - min)) + min
+    }
+
+
+    for (let i = 0; i <= 100; i++) {
+      console.log(rand(150, 200))
+    }
+
+  </script>
+</body>
+
+</html>
